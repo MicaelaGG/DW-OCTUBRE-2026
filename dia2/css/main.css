@@ -1,0 +1,40 @@
+div {
+    border: 1px #523c20;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #523c20;
+}
+
+.jerarquia {
+    background-color: #faf8f6;
+    color: #523c20;
+}
+
+.parrafo {
+    background-color: #f2ece3;
+}
+
+.tabla {
+    background-color: #efe5d8;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+/*comentarios */
+th, td {
+    border: 3px solid #97703c;
+    padding: 8px;
+    text-align: center;
+    color: #523c20
+
+}
+
+p>span {
+    color: #FF0000;
+    font-weight: bold;
+}

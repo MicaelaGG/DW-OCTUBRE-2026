@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.div-padre {
+    width: 250px;
+    height: 250px;
+    background-color: #8c1e80;
+    margin: 50px auto;
+    padding: 50px;
+    border: 8px groove #520c61;
+}
+
+.div-hijo {
+    width: 50%;
+    height: 50%;
+    background-color: #a84296;
+    margin: 25% auto;
+    border: 6px groove #a84296;
+}
+
+.primer-div {
+    width: 250px;
+    height: 250px;
+    margin: 50px auto;
+    background-color: rgb(75, 210, 181);
+}
+
+.segundo-div {
+    width: 250px;
+    height: 250px;
+    margin: 50px auto;
+    background-color: rgb(77, 161, 203);
+}
+
+.tercer-div {
+    width: 250px;
+    height: 250px;
+    margin: 50px auto;
+    background-color:rgb(59, 99, 148);
+}
