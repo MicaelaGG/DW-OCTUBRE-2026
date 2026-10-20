@@ -32,3 +32,65 @@ Ul li a {
     border-radius: 5px;
 }
 
+ul li a:hover {
+    background-color: #555;
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    background-color:#f4f4f4;
+    min-height: calc(100vh - 171px)
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main p {
+    width: 80%;
+    margin: 20px auto;
+}
+
+main p.center {
+    text-align: center;
+}
+
+main img {
+    width: 100%;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons button {
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: black;
+    color: #fff;
+    margin: 10px 20px;
+    padding: 10px;
+    transition: background-color .3s, transform .3s;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color:#555;
+}
+
+.buttons button:active {
+    transform: scale(.9);
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
