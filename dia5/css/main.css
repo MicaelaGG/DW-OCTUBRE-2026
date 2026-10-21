@@ -11,20 +11,21 @@ header, footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-header h1 {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin: 0;
-    font-size: 3.5rem;
+header img {
+    width: 30%;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: center;    
 }
 
 ul {
@@ -50,13 +51,6 @@ ul a:active {
     color: #261ecd;
 }
 
-img {
-    width:97%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-}
-
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.6;
@@ -74,15 +68,24 @@ p, h1 {
     text-align: justify;
 }
 
+p {
+    font-size: 20px;
+    color: rgb(255, 248, 241);
+}
+
+main img {
+    width: 100%;
+}
+
 .personajes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 70px;
-    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .personajes img {
-    width: 50%;
+    width: 15%;
     height: auto;
 }
 
