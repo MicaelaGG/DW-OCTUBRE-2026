@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-header, footer {
+header {
     background: linear-gradient(to bottom, #120c83, #140603);
     color: #fff;
     padding: 20px;
@@ -19,12 +19,6 @@ header, footer {
 
 header img {
     width: 30%;
-}
-
-h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    text-align: center;    
 }
 
 ul {
@@ -72,8 +66,14 @@ p {
     color: rgb(255, 248, 241);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main img {
-    width: 100%;
+    width: 80%;
 }
 
 .personajes {
@@ -84,7 +84,7 @@ main img {
 }
 
 .personajes img {
-    width: 15%;
+    width: 50%;
     height: auto;
 }
 
@@ -111,4 +111,104 @@ main img {
     border-color: #261ecd;
     color: #000000;
     cursor: pointer;
+}
+
+footer {
+    background: linear-gradient(to bottom, #120c83, #140603);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.personajes {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 40px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.caja_personajes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    background-color: xxxx;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.caja_personaje img {
+    width: 20px;
+}
+
+.info_personajes {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+/*Inicio de cartad FLIP*/
+.card {
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  float: left;
+  perspective: 500px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #140603;
+  color: #03446A;
+  text-align: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.back {
+  background: #120c83;
+  color: white;
+  transform: rotateY( 180deg );
+  flex-direction: column;
+}
+
+.back ol {
+    list-style: none;
 }
