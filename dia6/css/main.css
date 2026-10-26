@@ -64,6 +64,7 @@ p, h1 {
 p {
     font-size: 20px;
     color: rgb(255, 248, 241);
+    margin: 20px;
 }
 
 main {
