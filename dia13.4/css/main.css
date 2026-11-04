@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+p {
+    height: 300vh;
+    width: 50vw;
+    text-align: center;
+}
+
+.primer_encabezado {
+    position: sticky;
+    top: 0;
+}
+
+.segundo_encabezado {
+    position: sticky;
+    top: 0;
+    background-color: blueviolet;
+}

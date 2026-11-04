@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+p {
+    height: 300vh;
+    width: 50vw;
+    text-align: center;
+}
+
+.parrafo_1 {
+    left: 25vw;
+    top: 50px;
+    position: relative;
+}
+
+.parrafo_2 {
+    right: 25vw;
+    bottom: 50px;
+    position: relative;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+}
+
+.div_1 {
+    position: absolute;
+    top: 0;  
+    right: 0;
+}
+
+.div_2 {
+    position: absolute;
+    top: 0;  
+}
+
+.div_3 {
+    position: absolute;
+    bottom: 0;  
+    right: 0;
+}
+
+.div_4 {
+    position: absolute;
+    bottom: 0;
+}
+
+.div_5 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
