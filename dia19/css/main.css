@@ -128,3 +128,121 @@ div {
         background-color: burlywood;
     }
 }
+
+div {
+    width: 100px;
+    height: 100px;
+}
+
+.uno {
+    background-color: mediumpurple;
+    transition: 0.5s;
+}
+
+.dos {
+    background-color: mediumturquoise;
+    transition: 0.5s;
+}
+
+.tres {
+    background-color: midnightblue;
+    transition: 0.5s;
+}
+
+.uno:hover {
+    width: 200px;
+}
+
+.dos:hover {
+    height: 200px;
+}
+
+.tres:hover {
+    width: 200px;
+    height: 200px;
+}
+
+.cuatro {
+    background-color: purple;
+    transition: 2s;
+}
+
+.cuatro:hover {
+    width: 200px;
+    height: 200px;
+    background-color: plum;
+}
+
+.cinco {
+    background-color: peachpuff;
+    transition: 0.5s;
+    color: rgba(0, 0, 0, 0);
+    text-align: center;
+    padding-top: 25px;
+}
+
+.cinco:hover {
+    color: rgb(205, 74, 59);
+}
+
+.seis {
+    background-color: darkseagreen;
+    animation-name: ensanchar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.siete {
+    background-color: darksalmon;
+    animation-name: rotar;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.ocho {
+    background-color: darkred;
+    animation-name: color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes ensanchar {
+    0% {
+        width: 100px;
+    }
+
+    50% {
+        width: 300px;
+    }
+
+    100% {
+        width: 100px;
+    }
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes color {
+    0% {
+        background-color: burlywood;
+    }
+
+    50% {
+        background-color: darkred;
+    }
+
+    100% {
+        background-color: burlywood;
+    }
+}
