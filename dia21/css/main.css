@@ -79,9 +79,24 @@ input[type=search] {
 }
 
 .noticia > h2 {
- color: pink;
+    font-size: 30px;
 }
 
-.noticia > p {
- color: pink;
+img {
+    object-fit: cover;
+}
+
+
+
+
+
+footer {
+    background-color: #03003a;
+    color: #e1f5ff;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 }
