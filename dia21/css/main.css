@@ -83,6 +83,8 @@ input[type=search] {
 }
 
 img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
     object-fit: cover;
 }
 
@@ -91,12 +93,11 @@ img {
 
 
 footer {
-    background-color: #03003a;
+    background-color: #0f0d47;
     color: #e1f5ff;
-    padding: 15px;
+    padding: 20px;
+    border-top: 3px solid #7789ff;
     text-align: center;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
     align-items: center;
 }

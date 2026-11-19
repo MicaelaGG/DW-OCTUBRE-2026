@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* COLORES GLOBALES (Color Hunt)*/
+    --color-principal: #000000;
+    --color-secundario: #CFFFE2;
+    --color-accento: #A2D5C6;
+    --color-fondo: #F6F6F6;
+    --color-texto: #333333;
+    --color-enlace: #1effc3;
+    --color-tercierio: #838383;
+
+    /* TIPOGRAFÍAS Y TAMAÑOS DE FUENTE */
+    --fuente-principal: 'Arial', sans-serif;
+    --tamaño-texto-base: 16px;
+    --tamaño-título: 24px;
+    --tamaño-subtítulo: 20px; 
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row;
+    color: #010125;
+}
+
+header img {
+    width: 30%;
+}
+
+.menu-hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* BOTÓN 3 RAYITAS */
+.hamburguesa {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburguesa span {
+    width: 28px;
+    height: 3px;
+    background-color: #010125;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* BARRA LETERAL */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    max-width: 80vw;
+    height: 100vh;
+    background-color: #F3E8DF;
+    padding: 20px;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.35s cubic-bezier (0.4, 0, 0.2, 1);
+}
+
+.lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lista a {
+    color: #010125;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+
+      
+    padding: 10px;
+    border-bottom: 1px solid #010125;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.lista a:hover {
+    color: #30d7ab;
+    padding-left: 20px;
+}
+
+/* FONDO OSCURO AL ABRIR MENÚ */
+.superposicion {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+}
+
+/* PARA QUE SALGA EL MENÚ LATERAL */
+.menu-hamburguesa:checked ~ .menu-lateral {
+    transform: translateX(0);
+}
+
+.menu-hamburguesa:checked ~ .superposicion {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-hamburguesa:checked .hamburguesa span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-hamburguesa:checked .hamburguesa span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-hamburguesa:checked .hamburguesa span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
