@@ -32,7 +32,8 @@ main {
     gap: 20px;
 }
 
-header > h1, header > form{
+header>h1,
+header>form {
     width: 20%;
 }
 
@@ -78,7 +79,7 @@ input[type=search] {
     gap: 20px
 }
 
-.noticia > h2 {
+.noticia>h2 {
     font-size: 30px;
 }
 
@@ -88,9 +89,45 @@ img {
     object-fit: cover;
 }
 
+.cosas {
+    height: 100vh;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+    padding: 50px;
+    width: 40%;
+    margin: 0 auto;
+}
 
+input[type=text], input[type=date], input[type=email], input[type=number], input[type=password] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
 
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+}
+
+form button {
+    padding: 12px 22px;
+    align-self: end;
+    background-color:  #7789ff;
+    color: #03003a;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 13px;
+}
 
 footer {
     background-color: #0f0d47;
