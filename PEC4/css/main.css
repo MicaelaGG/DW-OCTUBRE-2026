@@ -268,7 +268,7 @@ header img {
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: color;
-    background-color: rgba(255, 255, 255, 0.526);
+    background-color: rgba(255, 255, 255, 0.729);
 }
 
 /*titulo*/
@@ -360,18 +360,109 @@ header img {
     display: block;
     width: 100%;
     margin-top: 24px;
-    padding: 5px 5px;
+    padding: 2px 2px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    color: #ffffffc7;
-    background-color: #302d2dd0;
-    border: 3px solid #000000;
-    border-radius: 50px;
+    color: #ffffff;
+    background-color: #302d2d77;
+    border: 3px solid #00000039;
+    border-radius: 20px;
     transition: background-color 0.2s ease;
     grid-column: 1 / 5;
 }
 
 .btn-todas-oferta:hover {
     background-color: #ecb3b3;
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+    background-color: #141414;
+    color: #f4f4f4;
+    padding: 50px 30px 20px;
+}
+
+.footer-tienda {
+    max-width: 100wv;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax (0, 1fr));
+    gap: 36px;
+    align-items: start;
+}
+
+.logo-marca {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo-marca img {
+    width: 20%;
+}
+
+.footer-descripcion {
+    margin: 0 0 25px;
+    max-width: 28vw;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    color: #cccccc;
+}
+
+.footer-contacto {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #bbbbbb;
+    max-width: 15vw;
+}
+
+.footer-titulo {
+    margin: 0 0 14px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+}
+
+.footer-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.footer-lista li {
+    margin-bottom: 8px;
+}
+
+.footer-lista a {
+    color: #d0d0d0;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-lista a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-final {
+   max-width: 100vw;
+   margin: 40px auto 0;
+   padding-top: 20px; 
+   display: flex;
+   justify-content: center;
+   gap: 16px;
+   font-size: 0.85rem;
+   color: #aaaaaa;
 }
