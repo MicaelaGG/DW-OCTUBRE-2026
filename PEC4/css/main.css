@@ -218,27 +218,28 @@ header img {
     color: #ffffff;
 }
 
-.bloque-grid .camisetas {
+.bloque-grid.camisetas {
     grid-column: 1 / 2;
     grid-row: 1;
 }
 
-.bloque-grid .abrigos {
+.bloque-grid.abrigos {
     grid-column: 2 / 3;
     grid-row: 1;
 }
 
-.bloque-grid .accesorios {
+.bloque-grid.accesorios {
     grid-column: 3 / 4;
     grid-row: 1;
 }
 
-.bloque-grid .zapatos {
+.bloque-grid.zapatos {
     grid-column: 1 / 4;
     grid-row: 2;
 }
 
 .bloque-grid img {
+    height: 100%;
     width: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -262,7 +263,7 @@ header img {
 .ofertas {
     max-width: 100vw;
     margin: 0 auto;
-    padding: 20px 30px;
+    padding: 60px 30px;
     background-image: url('../assets/imagenes/fondo-descuento.jpg');
     background-size: cover;
     background-position: center;
@@ -277,7 +278,6 @@ header img {
     padding: 10px 16px;
     color: #c83232;
     font-size: 1.5rem;
-
 }
 
 /*empieza grid*/
@@ -387,28 +387,34 @@ header img {
 .footer {
     background-color: #141414;
     color: #f4f4f4;
-    padding: 50px 30px 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
 .footer-tienda {
-    max-width: 100wv;
+    max-width: 100vw;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, minmax (0, 1fr));
-    gap: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    flex-direction: row;
+    gap: 40px;
     align-items: start;
 }
 
 .logo-marca {
     display: inline-block;
     margin-bottom: 14px;
-    font-size: 1.8rem;
     text-decoration: none;
     color: #ffffff;
 }
 
 .logo-marca img {
-    width: 20%;
+    width: 30%;
 }
 
 .footer-descripcion {
@@ -428,7 +434,7 @@ header img {
 
 .footer-titulo {
     margin: 0 0 14px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 1.5px;
     color: #ffffff;
@@ -448,7 +454,7 @@ header img {
 .footer-lista a {
     color: #d0d0d0;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .footer-lista a:hover {
@@ -456,13 +462,232 @@ header img {
     text-decoration: underline;
 }
 
+/* MAPA */
+.footer-mapa {
+    flex: 1.3 1 0;
+}
+
+.div-mapa {
+    width: 100%;
+    height: 170px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.div-mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
 .footer-final {
-   max-width: 100vw;
-   margin: 40px auto 0;
-   padding-top: 20px; 
-   display: flex;
-   justify-content: center;
-   gap: 16px;
-   font-size: 0.85rem;
-   color: #aaaaaa;
+    max-width: 100vw;
+    margin: 30px auto 0;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row;
+    gap: 16px;
+    font-size: 0.85rem;
+    color: #aaaaaa;
+}
+
+.hero-mujer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/imagenes/moda-femenina.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* PÁGINA - ROPA FEMENINA */
+
+/* HERO */
+.hero-mujer h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+
+/* NUEVA COLECCIÓN */
+.main-femenina {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 32px 48px;
+}
+
+.titulo-coleccion-femenina {
+    margin: 0 0 18px;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #333333;
+}
+
+.coleccion-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.coleccion-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.coleccion-carta {
+    display: block;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #777777;
+    background-color: #f8f7f4;
+    overflow: hidden;
+}
+
+.coleccion-carta img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coleccion-flecha {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #333333;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+
+/* SECCIÓN BANNER ROPA -- NECESITA JS */
+.camisetas-banner {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 6;
+    overflow: hidden;
+}
+
+.camisetas-banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+
+
+/* SECCIÓN DE PRODUCTO ELEGIDO */
+.pantalon-destacado {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    gap: 36px;
+    align-items: start;
+}
+
+.pantalon-destacado img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.pantalon-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding-top: 8px;
+}
+
+.pantalon-nombre {
+    margin: 0 0 12px;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: #333333;
+}
+
+.pantalon-descripcion {
+    margin: 0 0 24px;
+    font-size: 0.95rem;
+    color: #444444;
+}
+
+.pantalon-etiqueta {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #444444;
+}
+
+.tallas-lista {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px
+}
+
+.talla-btn {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #777777;
+    background-color: #f8f7f4;
+    color: #333333;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.talla-btn:hover, .tall-btn:focus-visible {
+    border-color: #111111;
+    background-color: #eceae4;
+}
+
+.pantalon-precio {
+    margin: 0 0 20px;
+    font-size: 1rem;
+    color: #333333;
+}
+
+.btn-carrito {
+    width: 100%;
+    padding: 12x 16px;
+    border: 1px solid #777777;
+    background-color: #f8f7f4;
+    color: #333333;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-carrito:hover {
+    background-color: #222222;
+    color: #ffffff;
+    border-color: #222222;
 }
