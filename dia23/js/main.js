@@ -18,3 +18,7 @@ btn_red.addEventListener("click", function () {
 btn_blue.addEventListener("click", function () {
     message3.style.color = "blue";
 })
+
+// 3
+const miboton = document.querySelector ("miboton");
+miboton.addEventListener("click", function () {alert ("Hola, has hecho click e nel botón.")});
